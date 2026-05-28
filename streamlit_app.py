@@ -21,7 +21,7 @@ def load_data():
     df['Caso Texto (Contexto Ecuador)'] = df['Caso Texto (Contexto Ecuador)'].astype(str)
     return df
 
-df = load_data()
+df = pd.read_excel("data/Pensamiento_Critico_Ecuatoriano_100_Ejemplos.xlsx")
 
 # Cargar modelo e índice FAISS
 @st.cache_resource
